@@ -11,8 +11,19 @@ describe('Display', () => {
         const strikes = getByText('Strikes:');
         const balls = getByText('Balls:');
         const hitButton = getByTestId('hit-button')
+
         fireEvent.click(hitButton);
         expect(strikes).toHaveTextContent('0')
         expect(balls).toHaveTextContent('0')
-    })
+    });
+
+    it('should display strikes and balls', () => {
+        const { getByText} = render(<Display />);
+
+        const strikes = getByText('Strikes:');
+        const balls = getByText('Balls:');
+
+        expect(strikes).toBeInTheDocument();
+        expect(balls).toBeInTheDocument();
+    });
 });
