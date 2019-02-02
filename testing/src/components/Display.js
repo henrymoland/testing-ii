@@ -63,11 +63,15 @@ class Display extends Component {
 
   render() {
     return (
-      <div>
-        <Dashboard handleStrike={ this.handleStrike } handleBall={ this.handleBall } handleFoul={ this.handleFoul } handleHit={ this.handleHit } />
-        <div className= 'count center'>
-          <h3>Balls: <span>{ this.state.balls }</span></h3>
-          <h3>Stikes: <span>{ this.state.strikes }</span></h3>
+      <div className="primary-overlay">
+        <div className="main-header">
+          <div className="display-container">
+            <Dashboard handleStrike={ this.handleStrike } handleBall={ this.handleBall } handleFoul={ this.handleFoul } handleHit={ this.handleHit } />
+            <div className= 'count center white-text'>
+              <h3>Balls: <span>{ this.state.balls }</span></h3>
+              <h3>Strikes: <span>{ this.state.strikes }</span></h3>
+            </div>
+          </div>
         </div>
       </div>
     );
