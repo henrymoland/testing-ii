@@ -1,0 +1,17 @@
+{
+  "name": "testing-ii",
+  "version": "1.0.0",
+  "description": "Testing",
+  "main": "index.js",
+  "repository": "https://github.com/henrymoland/testing-ii.git",
+  "author": "Henry Moland <molandh@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "yarn": "^1.13.0"
+  },
+  "devDependencies": {
+    "jest-dom": "^3.0.1",
+    "nodemon": "^1.18.9",
+    "react-testing-library": "^5.4.4"
+  }
+}
