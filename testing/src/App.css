@@ -1,0 +1,23 @@
+.primary-overlay {
+  background: rgba(10, 4, 4, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-header {
+  background: url(./img/img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.display-container {
+  padding-top: 50px;
+}
+.btn {
+  margin-right: 5px;
+}
